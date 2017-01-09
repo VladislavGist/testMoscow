@@ -1,0 +1,129 @@
+include modules/mixins
+
+extends modules/template
+block title 
+	title Page A
+
+block content
+	.wrapper
+		.allContent
+			.blocks
+
+				nav.navbar.navbar-default(role='navigation')
+					.container
+
+						.navbar-header
+							button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+
+						#bs-example-navbar-collapse-1.collapse.navbar-collapse
+							ul.nav.navbar-nav
+								li
+									a(href='#') Болезни
+								li
+									a(href='#') О товаре
+								li
+									a(href='#') Испытания
+								li
+									a(href='#') Состав
+								li
+									a(href='#') Мнение врача
+								li
+									a(href='#') Отзывы
+								li
+									a(href='#') Заказ и оплата
+							a(href="/").button-1 Оформить заказ
+
+				header
+					.container
+						h1 Свобода движений – 
+							span СУСТАВИТИН!
+						h2 инновационное средство от болезней суставов широкого спектра!
+
+						.presents
+							.item
+								.img.product
+									img(src="upload/tovar.png", alt="img")
+								.timer
+									p До конца акции осталось:
+									.setTimer01
+									.lettersTimer
+										span дней
+										span часов
+										span минут
+										Span секунд
+							.item
+								.listElements
+									ul
+										li
+											.img
+												img(src="upload/01.png", alt="img")
+											p Останавливает воспалительные процессы
+
+										li
+											.img
+												img(src="upload/02.png", alt="img")
+											p Профилактика болезней суставов
+
+										li
+											.img
+												img(src="upload/03.png", alt="img")
+											p Стимулирует вывод солей
+
+										li
+											.img
+												img(src="upload/04.png", alt="img")
+											p Лечит артрит
+
+										li
+											.img
+												img(src="upload/05.png", alt="img")
+											p Снимает боль
+
+										li
+											.img
+												img(src="upload/06.png", alt="img")
+											p Восстанавливает хрящевую ткань
+								.summary
+									.top
+										span.prevSum 2700 руб.
+										span.newSum успей заказать по акции -50%
+									p.sum 1350 руб.
+
+									a(href="/").button2 заказать
+
+				article
+					.container
+						p.title Болезни суставов могут стать причиной 
+							span инвалидности
+
+						.elements
+							.item
+								.img
+									img(src="upload/bol01.png", alt="img")
+								p.name Артрит
+
+							.item
+								.img
+									img(src="upload/bol02.png", alt="img")
+								p.name Артроз
+
+							.item
+								.img
+									img(src="upload/bol03.png", alt="img")
+								p.name Бурсит
+
+							.item
+								.img
+									img(src="upload/bol04.png", alt="img")
+								p.name Подагра
+
+							.item
+								.img
+									img(src="upload/bol05.png", alt="img")
+								p.name Пяточная шпора
+	//
+		include modules/footer

@@ -1,0 +1,103 @@
+section.sliderGallery {
+  padding-bottom: 90px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background: white; }
+  section.sliderGallery .row a {
+    float: right;
+    margin-right: 8px; }
+  section.sliderGallery .sliderGalleryActivate {
+    padding: 10px 0;
+    -webkit-box-shadow: 1px 0 5px rgba(52, 73, 94, 0.2);
+            box-shadow: 1px 0 5px rgba(52, 73, 94, 0.2); }
+    section.sliderGallery .sliderGalleryActivate .item a {
+      margin: 0 5px; }
+    section.sliderGallery .sliderGalleryActivate .item img {
+      display: block;
+      margin: 0 auto;
+      -webkit-transition: -webkit-box-shadow .3s ease;
+      transition: -webkit-box-shadow .3s ease;
+      transition: box-shadow .3s ease;
+      transition: box-shadow .3s ease, -webkit-box-shadow .3s ease; }
+      section.sliderGallery .sliderGalleryActivate .item img:hover {
+        -webkit-box-shadow: 1px 0 5px rgba(52, 73, 94, 0.2);
+                box-shadow: 1px 0 5px rgba(52, 73, 94, 0.2); }
+    @media (max-width: 992px) {
+      section.sliderGallery .sliderGalleryActivate .item {
+        padding: 0 10px;
+        overflow: hidden; } }
+  section.sliderGallery .slick-list {
+    margin: 0 auto;
+    width: 89%; }
+  section.sliderGallery .slick-next {
+    right: 10px;
+    background: url("../images/sl_ls_right.png") no-repeat;
+    width: 35px;
+    height: 30px;
+    -webkit-transition: right .3s ease;
+    transition: right .3s ease; }
+    section.sliderGallery .slick-next::before {
+      content: ''; }
+    section.sliderGallery .slick-next:hover {
+      right: -10px; }
+  section.sliderGallery .slick-prev {
+    left: 10px;
+    background: url("../images/sl_ls_left.png") no-repeat;
+    width: 35px;
+    height: 30px;
+    -webkit-transition: left .3s ease;
+    transition: left .3s ease; }
+    section.sliderGallery .slick-prev::before {
+      content: ''; }
+    section.sliderGallery .slick-prev:hover {
+      left: -10px; }
+  @media (max-width: 1200px) {
+    section.sliderGallery .slick-next {
+      right: -55px; }
+      section.sliderGallery .slick-next:hover {
+        right: -60px; }
+    section.sliderGallery .slick-prev {
+      left: -55px; }
+      section.sliderGallery .slick-prev:hover {
+        left: -60px; } }
+  @media (max-width: 992px) {
+    section.sliderGallery .slick-next {
+      right: 0; }
+      section.sliderGallery .slick-next:hover {
+        right: -10px; }
+    section.sliderGallery .slick-prev {
+      left: 0;
+      z-index: 1000; }
+      section.sliderGallery .slick-prev:hover {
+        left: -10px; } }
+  section.sliderGallery h2 {
+    margin-bottom: 30px;
+    text-align: center; }
+  section.sliderGallery .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 180px; }
+    section.sliderGallery .item .img {
+      overflow: hidden;
+      margin: auto;
+      width: 177px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    section.sliderGallery .item .name a {
+      margin-top: 8px;
+      display: block;
+      text-align: center;
+      color: #3c446d;
+      font-family: 'UbuntuBold';
+      font-size: 18px; }
+    section.sliderGallery .item .status {
+      text-align: center;
+      font-family: 'UbuntuRegular';
+      font-size: 16px; }
